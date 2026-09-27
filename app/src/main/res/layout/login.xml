@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#DAD5B8"
-    android:layout_margin="20dp"
     android:padding="15dp">
 
     <!-- Top Linear -->
