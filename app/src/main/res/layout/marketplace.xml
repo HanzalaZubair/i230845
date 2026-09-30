@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Marketplace"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/search"
+                android:background="@drawable/circle"
+                android:backgroundTint="#dad5b8"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/messenger"
+                android:background="@drawable/circle"
+                android:backgroundTint="#dad5b8"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:id="@+id/messenger"
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:background="@drawable/circle"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:backgroundTint="@color/red"
+                android:translationX="-15dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="5"
+        >
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            android:layout_columnWeight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/friends"
+            android:background="@android:color/transparent"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/market"
+            android:background="@android:color/transparent"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/notification"
+            android:background="@android:color/transparent"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:background="@android:color/transparent"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="#0B5F63" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="#0B5F63" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="#0B5F63" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="#0B5F63" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="#0B5F63" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/oval"
+            android:layout_marginHorizontal="20dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sell"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/oval"
+            android:layout_marginHorizontal="20dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/category"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Today's Picks"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Karachi - 40 km"
+            android:textColor="#0B5F63"
+            android:drawableTint="#0B5F63"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/karachi"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/location"
+            android:layout_toStartOf="@id/karachi"
+            android:layout_marginEnd="4dp"
+            android:layout_centerVertical="true"
+            android:drawableTint="#0B5F63"
+            android:tint="#0B5F63"
+            />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:useDefaultMargins="true"
+        android:layout_weight="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/itemImage1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/default_gallery"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JUST LISTED"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/brown"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="12dp" />
+
+            <TextView
+                android:id="@+id/itemPrice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemImage1"
+                android:text="Rs. 45,000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemPrice1"
+                android:textSize="14sp"
+                android:text="Road Bike, 21-Speed "
+                android:textColor="@android:color/black"
+                android:id="@+id/itemDescription1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemDescription1"
+                android:text="Clifton"
+                android:textColor="@android:color/black"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/itemImage2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/default_gallery"
+                android:scaleType="centerCrop"
+                />
+
+
+            <TextView
+                android:id="@+id/itemPrice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemImage2"
+                android:text="Rs 8,500"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemPrice2"
+                android:text="Rattan armchair"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/itemDescription2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemDescription2"
+                android:text="DHA Phase 6"
+                android:textColor="@android:color/black"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/itemImage3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/default_gallery"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:id="@+id/itemPrice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemImage3"
+                android:text="Rs 15,000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemPrice3"
+                android:text="Solid Wood Study Desk"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/itemDescription3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemDescription3"
+                android:text="Gulshan"
+                android:textColor="@android:color/black"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/itemImage4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/default_gallery"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JUST LISTED"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/brown"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="12dp" />
+
+            <TextView
+                android:id="@+id/itemName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemImage4"
+                android:text="Rs. 3,200"
+
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemName4"
+                android:textSize="14sp"
+                android:text="Ceramic plant pots, set of 3"
+                android:textColor="@android:color/black"
+                android:id="@+id/itemDescription4"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/itemDescription4"
+                android:text="Saddar"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+    </GridLayout>
+
+</LinearLayout>

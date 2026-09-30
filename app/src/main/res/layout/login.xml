@@ -157,7 +157,8 @@
                     android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/meatballs_menu" />
+                    android:src="@drawable/meatballs_menu"
+                    android:padding="10dp"/>
 
             </LinearLayout>
 
@@ -182,12 +183,11 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="jacob.west@gmail.com"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -218,12 +218,11 @@
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="*********"
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 

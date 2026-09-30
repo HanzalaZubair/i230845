@@ -139,7 +139,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:paddingHorizontal="10dp"
             android:background="@color/white"
             android:layout_marginRight="20dp">
 
@@ -152,11 +152,10 @@
                 android:gravity="center_vertical"
                 android:textColor="@color/black" />
 
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Jacob"
                 android:gravity="center_vertical"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -170,7 +169,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:paddingHorizontal="10dp"
             android:background="@color/white">
 
             <TextView
@@ -182,11 +181,10 @@
                 android:gravity="center_vertical"
                 android:textColor="@color/black" />
 
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="West"
                 android:gravity="center_vertical"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -250,11 +248,10 @@
                         android:gravity="center_vertical"
                         android:textColor="@color/black" />
 
-                    <TextView
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="14"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/black" />
@@ -278,7 +275,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:background="@color/white"
-                android:padding="10dp"
+                android:paddingHorizontal="10dp"
                 android:layout_marginRight="10dp">
 
                 <LinearLayout
@@ -296,11 +293,10 @@
                         android:gravity="center_vertical"
                         android:textColor="@color/black" />
 
-                    <TextView
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Mar"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/black" />
@@ -341,11 +337,10 @@
                         android:gravity="center_vertical"
                         android:textColor="@color/black" />
 
-                    <TextView
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="2004"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/black" />
@@ -491,11 +486,10 @@
             android:textSize="16sp"
             android:gravity="center_vertical"
             android:textColor="@color/black" />
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="jacob.west@mail.com"
             android:textSize="16sp"
             android:gravity="center_vertical"
             android:textColor="@color/black" />
@@ -530,11 +524,10 @@
                     android:gravity="center_vertical"
                     android:textColor="@color/black" />
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="**********"
                     android:textSize="16sp"
                     android:gravity="center_vertical"
                     android:textColor="@color/black" />
