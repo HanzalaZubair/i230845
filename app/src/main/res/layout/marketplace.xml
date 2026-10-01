@@ -76,56 +76,137 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:columnCount="5"
-        >
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/home"
-            android:layout_columnWeight="1"
-            android:background="@android:color/transparent"
-            android:scaleType="fitCenter"
-            android:padding="8dp"
-            />
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/friends"
-            android:background="@android:color/transparent"
-            android:layout_columnWeight="1"
-            android:scaleType="fitCenter"
-            android:padding="8dp"
-            />
+        android:columnCount="5">
 
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/market"
-            android:background="@android:color/transparent"
+        <!-- Home -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_columnWeight="1"
-            android:scaleType="fitCenter"
-            android:padding="8dp"
-            />
+            android:gravity="center">
 
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/notification"
-            android:background="@android:color/transparent"
-            android:layout_columnWeight="1"
-            android:scaleType="fitCenter"
-            android:padding="8dp"
-            />
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/home"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:padding="8dp" />
 
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/menu"
-            android:background="@android:color/transparent"
+        </LinearLayout>
+
+        <!-- Friends -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_columnWeight="1"
-            android:scaleType="fitCenter"
-            android:padding="10dp"
-            />
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/friends"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/friends"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="2"
+                android:textColor="@color/white"
+                android:background="@drawable/circle"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:backgroundTint="@color/red"
+                android:translationX="-15dp"
+                android:translationY="-10dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Marketplace -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/market"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/market"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:background="@drawable/circle"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:backgroundTint="@color/red"
+                android:translationX="-15dp"
+                android:translationY="-10dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Notifications -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/notification"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="5"
+                android:textColor="@color/white"
+                android:background="@drawable/circle"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:backgroundTint="@color/red"
+                android:translationX="-15dp"
+                android:translationY="-10dp" />
+
+        </LinearLayout>
+
+        <!-- Menu -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/menu"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:padding="10dp" />
+
+        </LinearLayout>
 
     </GridLayout>
 
