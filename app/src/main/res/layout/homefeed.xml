@@ -320,7 +320,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
-                android:layout_marginVertical="13dp"
+                android:layout_marginVertical="12dp"
                 />
 
             <TextView
@@ -431,6 +431,7 @@
 
     </LinearLayout>
 
+<!--    Post-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -509,7 +510,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.3"
             android:text="Sunset walk with the crew. Worth every grain of sand in my shoes"
             android:textColor="@color/black"
             android:textSize="16dp"
@@ -518,7 +519,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="5"
+            android:layout_weight="4"
             android:orientation="horizontal"
             >
             <ImageView
@@ -583,7 +584,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.7"
             android:orientation="horizontal"
             >
 
@@ -591,13 +592,13 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:paddingLeft="10dp"
-                android:gravity="center"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
                 >
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/like"
                     android:tint="@color/white"
                     android:background="@drawable/circle"
@@ -609,8 +610,8 @@
                     />
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/heart"
                     android:tint="@color/white"
                     android:background="@drawable/circle"
@@ -624,8 +625,8 @@
                     />
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/emoji"
                     android:tint="@color/white"
                     android:background="@drawable/circle"
@@ -648,7 +649,7 @@
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:gravity="center_vertical"
-                android:layout_weight="3"
+                android:layout_weight="4"
                 />
 
         </LinearLayout>
