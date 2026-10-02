@@ -112,7 +112,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/outline_photo_camera_24"
+                android:src="@drawable/camera"
                 android:layout_alignBottom="@id/person"
                 android:layout_alignEnd="@id/person"
                 android:background="@drawable/border"
