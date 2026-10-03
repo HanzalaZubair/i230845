@@ -233,7 +233,7 @@
                 android:gravity="center"
                 android:text="JW"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>

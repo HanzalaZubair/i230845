@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_gallery"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:id="@+id/statusline"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="4dp"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="4dp"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="4dp"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="4dp"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/statusline"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#0B5F63"
+                    android:gravity="center"
+                    android:text="OF"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Omar Farooq"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="5h - "
+                        android:drawableEnd="@drawable/globe"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:drawableTint="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/meatballs_menu"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/white"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/close"
+                    android:tint="@color/white"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karachi nights"
+                android:textColor="@color/black"
+                android:rotation="-10"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:background="@color/white"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:background="@color/black" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/oval"
+                android:backgroundTint="@color/gray"
+                android:layout_weight="3">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:hint="Send message ..."
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/oval"
+                    android:backgroundTint="@color/black"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/like"
+                    android:tint="@color/white"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#0B5F63"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:foregroundGravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/heart"
+                    android:tint="@color/white"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/red"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:foregroundGravity="center_vertical"
+                    android:id="@+id/heart"
+                    android:layout_toEndOf="@+id/like"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/emoji"
+                    android:tint="@color/white"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/orange"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:foregroundGravity="center_vertical"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

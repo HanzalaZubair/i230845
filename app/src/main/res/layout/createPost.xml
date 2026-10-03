@@ -22,14 +22,15 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
 
-            <TextView
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:text="×"
-                android:textSize="28sp"
-                android:textColor="#222222"/>
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:padding="18dp"
+
+                android:src="@drawable/close"
 
             <TextView
                 android:layout_width="0dp"

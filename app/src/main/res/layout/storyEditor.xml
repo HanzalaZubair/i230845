@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_gallery"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                >
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:src="@drawable/close"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#80808080"
+                    android:scaleType="fitCenter"
+                    android:padding="13dp"
+                    android:tint="@color/white"
+                    android:id="@+id/close"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:src="@drawable/addcontact"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#80808080"
+                    android:scaleType="fitCenter"
+                    android:padding="13dp"
+                    android:tint="@color/white"
+                    android:id="@+id/emoji"
+                    android:layout_toStartOf="@+id/type"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Aa"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#80808080"
+                    android:id="@+id/type"
+                    android:layout_toStartOf="@+id/emoji"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:src="@drawable/face"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#80808080"
+                    android:scaleType="fitCenter"
+                    android:padding="13dp"
+                    android:tint="@color/white"
+                    android:id="@+id/emoji"
+                    android:layout_toStartOf="@+id/music"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:src="@drawable/music"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#80808080"
+                    android:scaleType="fitCenter"
+                    android:padding="13dp"
+                    android:tint="@color/white"
+                    android:id="@+id/music"
+                    android:layout_toStartOf="@+id/star"
+                    />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:src="@drawable/star"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#80808080"
+                    android:scaleType="fitCenter"
+                    android:padding="13dp"
+                    android:tint="@color/white"
+                    android:id="@+id/star"
+                    android:layout_alignParentEnd="true"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saturday plans"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:background="@color/brown"
+                android:padding="10dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginLeft="50dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:background="@color/black" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="2.5"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/oval"
+                android:backgroundTint="#2f2f2f"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/jw"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#0B5F63"
+                    android:gravity="center"
+                    android:text="JW"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0B5F63"
+                    android:gravity="center"
+                    android:text="Your story"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="2.5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/oval"
+                android:backgroundTint="#2f2f2f"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/star"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/green"
+                    android:tint="@color/white"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0B5F63"
+                    android:gravity="center"
+                    android:text="Close friends"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/outline_arrow_downward_24"
+                    android:padding="7dp"
+                    android:rotation="-90"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#0B5F63"
+                    android:tint="@color/white"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
