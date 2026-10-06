@@ -185,7 +185,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:gravity="top"
-            android:text="Weekend plan: coffee, sketching, and absolutely no email."
+            android:hint="Weekend plan: coffee, sketching, and absolutely no email."
             android:textSize="20sp"
             android:textColor="#222222"
             android:background="@android:color/transparent"

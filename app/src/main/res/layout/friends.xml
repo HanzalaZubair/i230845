@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,8 +21,7 @@
             android:textColor="@android:color/black"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:gravity="center_vertical"
-            />
+            android:gravity="center_vertical" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -32,7 +31,7 @@
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_weight="1"
                 android:src="@drawable/search"
                 android:background="@drawable/circle"
@@ -40,12 +39,11 @@
                 android:layout_gravity="center"
                 android:layout_marginRight="10dp"
                 android:scaleType="fitCenter"
-                android:padding="10dp"
-                />
+                android:padding="10dp" />
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_weight="1"
                 android:src="@drawable/messenger"
                 android:background="@drawable/circle"
@@ -53,8 +51,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center"
                 android:scaleType="fitCenter"
-                android:padding="10dp"
-                />
+                android:padding="10dp" />
 
             <TextView
                 android:layout_width="20dp"
@@ -66,25 +63,22 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:backgroundTint="@color/red"
-                android:translationX="-20dp"
-
-                />
+                android:translationX="-20dp" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:columnCount="5">
+        android:orientation="horizontal">
 
-        <!-- Home -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
@@ -97,11 +91,10 @@
 
         </LinearLayout>
 
-        <!-- Friends -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
@@ -129,11 +122,10 @@
 
         </LinearLayout>
 
-        <!-- Marketplace -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
@@ -161,11 +153,10 @@
 
         </LinearLayout>
 
-        <!-- Notifications -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
@@ -192,11 +183,10 @@
 
         </LinearLayout>
 
-        <!-- Menu -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
@@ -210,8 +200,7 @@
 
         </LinearLayout>
 
-    </GridLayout>
-
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -229,8 +218,7 @@
             android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:padding="10dp"
-            android:layout_gravity="center_vertical"
-            />
+            android:layout_gravity="center_vertical" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -242,8 +230,7 @@
             android:layout_marginHorizontal="5dp"
             android:textColor="@color/black"
             android:padding="10dp"
-            android:layout_gravity="center_vertical"
-            />
+            android:layout_gravity="center_vertical" />
 
     </LinearLayout>
 
@@ -273,8 +260,8 @@
                     android:textStyle="bold"
                     android:gravity="center_vertical"
                     android:id="@+id/fr"
-                    android:layout_marginEnd="5dp"
-                    />
+                    android:layout_marginEnd="5dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -283,8 +270,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:gravity="center_vertical"
-                    android:layout_toEndOf="@+id/fr"
-                    />
+                    android:layout_toEndOf="@+id/fr" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -294,8 +280,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:gravity="center_vertical"
-                    android:layout_alignParentEnd="true"
-                    />
+                    android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
 
@@ -308,7 +293,7 @@
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:layout_weight="2"
                     android:background="@drawable/circle"
                     android:backgroundTint="@color/blue"
@@ -329,21 +314,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Omar Siddiqui"
+                        android:text="Sara Iqbal"
                         android:textStyle="bold"
                         android:gravity="bottom"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
-                        />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:textSize="14sp"
-                        android:text="12 mutual friends - FAST NUCES"
-                        android:textStyle="bold"
-                        />
+                        android:text="8 mutual friends"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -363,8 +346,7 @@
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_marginRight="10dp"
-                            android:layout_marginVertical="5dp"
-                            />
+                            android:layout_marginVertical="5dp" />
 
                         <TextView
                             android:id="@+id/name"
@@ -377,8 +359,8 @@
                             android:textColor="@color/black"
                             android:background="#dad5b8"
                             android:textSize="18sp"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -386,22 +368,20 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    >
+                    android:layout_weight="1">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:gravity="center_horizontal"
                         android:text="3d"
-                        android:textStyle="bold"
-                        />
-
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
+            </LinearLayout>
 
-        </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
@@ -411,12 +391,12 @@
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:layout_weight="2"
                     android:background="@drawable/circle"
                     android:backgroundTint="@color/blue"
                     android:gravity="center"
-                    android:text="SI"
+                    android:text="BA"
                     android:textColor="@color/white"
                     android:textSize="22sp"
                     android:textStyle="bold"
@@ -432,21 +412,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Omar Siddiqui"
+                        android:text="Bilal Ahmad "
                         android:textStyle="bold"
                         android:gravity="bottom"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
-                        />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:textSize="14sp"
-                        android:text="12 mutual friends - FAST NUCES"
-                        android:textStyle="bold"
-                        />
+                        android:text="14 mutual friends"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -460,15 +438,13 @@
                             android:layout_height="match_parent"
                             android:layout_weight="2"
                             android:layout_marginVertical="5dp"
-
                             android:gravity="center"
                             android:background="#0B5F63"
                             android:text="Confirm"
                             android:textColor="@color/white"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:layout_marginRight="10dp"
-                            />
+                            android:layout_marginRight="10dp" />
 
                         <TextView
                             android:id="@+id/name"
@@ -477,13 +453,12 @@
                             android:layout_weight="2"
                             android:gravity="center"
                             android:layout_marginVertical="5dp"
-
                             android:text="Delelte"
                             android:textColor="@color/black"
                             android:background="#dad5b8"
                             android:textSize="18sp"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -491,22 +466,20 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    >
+                    android:layout_weight="1">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:gravity="center_horizontal"
                         android:text="1w"
-                        android:textStyle="bold"
-                        />
-
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
-
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
@@ -516,12 +489,12 @@
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:layout_weight="2"
                     android:background="@drawable/circle"
                     android:backgroundTint="@color/blue"
                     android:gravity="center"
-                    android:text="SI"
+                    android:text="NF"
                     android:textColor="@color/white"
                     android:textSize="22sp"
                     android:textStyle="bold"
@@ -537,21 +510,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Omar Siddiqui"
+                        android:text="Noor Fatima"
                         android:textStyle="bold"
                         android:gravity="bottom"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
-                        />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:textSize="14sp"
-                        android:text="12 mutual friends - FAST NUCES"
-                        android:textStyle="bold"
-                        />
+                        android:text="3 mutual friends"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -566,14 +537,12 @@
                             android:layout_weight="2"
                             android:gravity="center"
                             android:layout_marginVertical="5dp"
-
                             android:background="#0B5F63"
                             android:text="Confirm"
                             android:textColor="@color/white"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:layout_marginRight="10dp"
-                            />
+                            android:layout_marginRight="10dp" />
 
                         <TextView
                             android:id="@+id/name"
@@ -582,13 +551,12 @@
                             android:layout_weight="2"
                             android:gravity="center"
                             android:layout_marginVertical="5dp"
-
                             android:text="Delelte"
                             android:textColor="@color/black"
                             android:background="#dad5b8"
                             android:textSize="18sp"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -596,20 +564,17 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    >
+                    android:layout_weight="1">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:gravity="center_horizontal"
                         android:text="2w"
-                        android:textStyle="bold"
-                        />
-
+                        android:textStyle="bold" />
 
                 </LinearLayout>
-
 
             </LinearLayout>
 
@@ -622,12 +587,12 @@
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="70dp"
                     android:layout_weight="2"
                     android:background="@drawable/circle"
-                    android:backgroundTint="@color/blue"
+                    android:backgroundTint="@color/brown"
                     android:gravity="center"
-                    android:text="SI"
+                    android:text="DS"
                     android:textColor="@color/white"
                     android:textSize="22sp"
                     android:textStyle="bold"
@@ -643,21 +608,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Omar Siddiqui"
+                        android:text="Danial Shah"
                         android:textStyle="bold"
                         android:gravity="bottom"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
-                        />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:textSize="14sp"
-                        android:text="12 mutual friends - FAST NUCES"
-                        android:textStyle="bold"
-                        />
+                        android:text="12 mutual friends"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -674,12 +637,10 @@
                             android:background="#0B5F63"
                             android:text="Confirm"
                             android:layout_marginVertical="5dp"
-
                             android:textColor="@color/white"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:layout_marginRight="10dp"
-                            />
+                            android:layout_marginRight="10dp" />
 
                         <TextView
                             android:id="@+id/name"
@@ -690,11 +651,10 @@
                             android:text="Delelte"
                             android:textColor="@color/black"
                             android:layout_marginVertical="5dp"
-
                             android:background="#dad5b8"
                             android:textSize="18sp"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -702,20 +662,17 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    >
+                    android:layout_weight="1">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:gravity="center_horizontal"
                         android:text="3w"
-                        android:textStyle="bold"
-                        />
-
+                        android:textStyle="bold" />
 
                 </LinearLayout>
-
 
             </LinearLayout>
 
@@ -723,25 +680,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_margin="5dp"
-                android:background="@color/gray"/>
+                android:background="@color/gray" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="People you many know"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:gravity="center_vertical"
-                android:id="@+id/fr"
-                android:layout_marginEnd="5dp"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="People you many know"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:id="@+id/fr"
+                    android:layout_marginEnd="5dp" />
 
+            </LinearLayout>
 
         </LinearLayout>
 

@@ -130,8 +130,8 @@
                 android:foregroundGravity="center_vertical"
                 android:id="@+id/heart"
                 android:layout_alignParentBottom="true"
-                android:translationY="-130dp"
-                android:translationX="10dp"
+                android:translationY="-150dp"
+                android:translationX="30dp"
                 />
             <ImageView
                 android:layout_width="25dp"
@@ -162,7 +162,7 @@
                 android:id="@+id/heart"
                 android:layout_alignParentBottom="true"
                 android:translationY="-70dp"
-                android:translationX="10dp"
+                android:translationX="30dp"
                 />
 
             <ImageView

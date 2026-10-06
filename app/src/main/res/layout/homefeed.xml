@@ -22,8 +22,7 @@
             android:textColor="#0B5F63"
             android:textSize="28sp"
             android:textStyle="bold"
-            android:gravity="center_vertical"
-            />
+            android:gravity="center_vertical" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -32,6 +31,7 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/search"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -40,10 +40,10 @@
                 android:backgroundTint="#dad5b8"
                 android:layout_marginRight="10dp"
                 android:scaleType="fitCenter"
-                android:padding="10dp"
-                />
+                android:padding="10dp" />
 
             <ImageButton
+                android:id="@+id/messenger"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -51,9 +51,7 @@
                 android:background="@drawable/circle"
                 android:backgroundTint="#dad5b8"
                 android:scaleType="fitCenter"
-                android:padding="10dp"
-                android:id="@+id/messenger"
-                />
+                android:padding="10dp" />
 
             <TextView
                 android:layout_width="20dp"
@@ -65,49 +63,47 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:backgroundTint="@color/red"
-                android:translationX="-15dp"
-                />
+                android:translationX="-15dp" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:columnCount="5">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:id="@+id/home"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/home"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                />
+                android:scaleType="fitCenter" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
                 android:id="@+id/friends"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/friends"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                />
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:layout_width="20dp"
@@ -121,25 +117,23 @@
                 android:backgroundTint="@color/red"
                 android:translationX="-15dp"
                 android:translationY="-10dp"
-                android:visibility="gone"
-                />
+                android:visibility="gone" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
-                android:id="@+id/market"
+                android:id="@+id/marketplace"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/market"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                />
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:layout_width="20dp"
@@ -153,25 +147,24 @@
                 android:backgroundTint="@color/red"
                 android:translationX="-15dp"
                 android:translationY="-10dp"
-                android:visibility="gone"
-                />
+                android:visibility="gone" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
                 android:id="@+id/notification"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
                 android:src="@drawable/notification"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                />
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:layout_width="20dp"
@@ -183,31 +176,29 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:backgroundTint="@color/red"
-                android:translationX="-15dp"
-                android:translationY="-10dp"
-                />
+                android:translationX="-30dp"
+                android:translationY="-10dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_columnWeight="1"
+            android:layout_weight="1"
             android:gravity="center">
 
             <ImageButton
                 android:id="@+id/menu"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/menu"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:padding="5dp"
-                />
+                android:padding="5dp" />
 
         </LinearLayout>
 
-    </GridLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -225,7 +216,6 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/jw"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/circle"
@@ -239,15 +229,14 @@
         </RelativeLayout>
 
         <EditText
+            android:id="@+id/createPost"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:hint="What's on your mind, Jacob?"
             android:background="@drawable/border"
             android:textSize="16sp"
-            android:padding="10dp"
-            />
-
+            android:padding="10dp" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -256,12 +245,14 @@
             android:gravity="center">
 
             <ImageButton
+                android:id="@+id/photoPicker"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/photo"
-                android:padding="10dp"/>
+                android:tint="#0B5F63"
+                android:padding="10dp" />
 
         </LinearLayout>
 
@@ -271,45 +262,38 @@
         android:layout_width="match_parent"
         android:layout_height="7dp"
         android:background="@color/gray"
-        android:layout_marginBottom="5dp"
-        />
+        android:layout_marginBottom="5dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:background="#80808080"
-            android:padding="5dp"
-            >
+            android:padding="5dp">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="115dp"
-                android:background="@color/gray"
-                android:id="@+id/storyimg"
-                />
+                android:background="@color/gray" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="Create Story"
-                android:layout_below="@+id/storyimg"
                 android:textColor="@color/black"
                 android:background="@color/white"
                 android:gravity="center"
                 android:textSize="16dp"
                 android:textStyle="bold"
-
-                />
+                android:layout_alignParentBottom="true" />
 
             <TextView
-                android:id="@+id/jw"
+                android:id="@+id/yourStory"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:background="@drawable/circle"
@@ -320,8 +304,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
-                android:layout_marginVertical="12dp"
-                />
+                android:layout_marginVertical="12dp" />
 
             <TextView
                 android:id="@+id/addStory"
@@ -333,23 +316,21 @@
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/jw"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                />
-
-
+                android:layout_alignParentBottom="true"
+                android:translationY="-30dp" />
 
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/omarStory"
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:background="#80808080"
             android:padding="5dp">
 
             <ImageView
-                android:id="@+id/storyimg"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/gray"
@@ -370,7 +351,6 @@
                 android:elevation="5dp" />
 
             <TextView
-                android:id="@+id/jw"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/circle"
@@ -380,8 +360,7 @@
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_margin="10dp"
-                />
+                android:layout_margin="10dp" />
 
         </RelativeLayout>
 
@@ -392,7 +371,6 @@
             android:padding="5dp">
 
             <ImageView
-                android:id="@+id/storyimg"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/gray"
@@ -413,7 +391,6 @@
                 android:elevation="5dp" />
 
             <TextView
-                android:id="@+id/jw"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/circle"
@@ -428,10 +405,8 @@
 
         </RelativeLayout>
 
-
     </LinearLayout>
 
-<!--    Post-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -471,8 +446,7 @@
                     android:text="Lina Marsh is at Clifton Beach"
                     android:gravity="center_vertical"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
-                    />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -482,8 +456,7 @@
                     android:drawableEnd="@drawable/globe"
                     android:gravity="center_vertical"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -508,6 +481,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/postCaption"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.3"
@@ -520,24 +494,22 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/default_gallery"
                 android:scaleType="centerCrop"
-                android:layout_margin="5dp"
-                />
+                android:layout_margin="5dp" />
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:padding="5dp"
-                >
+                android:padding="5dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -545,8 +517,7 @@
                     android:layout_weight="1"
                     android:src="@drawable/default_gallery"
                     android:scaleType="centerCrop"
-                    android:layout_marginBottom="5dp"
-                    />
+                    android:layout_marginBottom="5dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -557,8 +528,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/default_gallery"
-                        android:scaleType="centerCrop"
-                        />
+                        android:scaleType="centerCrop" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -569,15 +539,11 @@
                         android:background="@color/black"
                         android:alpha="0.7"
                         android:gravity="center"
-                        android:textStyle="bold"
-
-                        />
-
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
             </LinearLayout>
-
 
         </LinearLayout>
 
@@ -585,18 +551,17 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.7"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="10dp"
-                >
+                android:layout_marginLeft="10dp">
 
                 <ImageView
+                    android:id="@+id/like"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/like"
@@ -605,11 +570,10 @@
                     android:backgroundTint="#0B5F63"
                     android:scaleType="fitCenter"
                     android:padding="5dp"
-                    android:foregroundGravity="center_vertical"
-                    android:id="@+id/like"
-                    />
+                    android:foregroundGravity="center_vertical" />
 
                 <ImageView
+                    android:id="@+id/heart"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/heart"
@@ -619,12 +583,11 @@
                     android:scaleType="fitCenter"
                     android:padding="5dp"
                     android:foregroundGravity="center_vertical"
-                    android:id="@+id/heart"
-                    android:layout_toEndOf="@+id/like"
-                    android:translationX="-10dp"
-                    />
+                    android:layout_toEndOf="@id/like"
+                    android:translationX="-10dp" />
 
                 <ImageView
+                    android:id="@+id/emoji"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/emoji"
@@ -634,23 +597,20 @@
                     android:scaleType="fitCenter"
                     android:padding="5dp"
                     android:foregroundGravity="center_vertical"
-                    android:id="@+id/emoji"
-                    android:layout_toEndOf="@+id/heart"
-                    android:translationX="-20dp"
-                    />
-
+                    android:layout_toEndOf="@id/heart"
+                    android:translationX="-20dp" />
 
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/comments"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:text="Aisha and 1.2k likes - 86 comments - 12 shares"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:gravity="center_vertical"
-                android:layout_weight="4"
-                />
+                android:layout_weight="4" />
 
         </LinearLayout>
 
@@ -658,8 +618,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -672,8 +631,7 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
-                android:paddingHorizontal="20dp"
-                />
+                android:paddingHorizontal="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -686,8 +644,7 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
-                android:paddingHorizontal="20dp"
-                />
+                android:paddingHorizontal="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -700,8 +657,7 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
-                android:paddingHorizontal="20dp"
-                />
+                android:paddingHorizontal="20dp" />
 
         </LinearLayout>
 

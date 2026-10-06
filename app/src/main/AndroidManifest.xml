@@ -11,18 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.I230845">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.I230845"
             android:windowSoftInputMode="adjustResize">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".HomeFeedActivity" />
+
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".ChatsActivity" />
+        <activity android:name=".FriendsActivity" />
+        <activity android:name=".MarketplaceActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".MenuActivity" />
+
+        <activity android:name=".CreatePostActivity" />
+        <activity android:name=".PhotoPickerActivity" />
+
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".YourStoryActivity" />
+        <activity android:name=".StoryViewerActivity" />
+
+        <activity android:name=".ReactionPickerActivity" />
+        <activity android:name=".CommentsActivity" />
+
     </application>
 
 </manifest>

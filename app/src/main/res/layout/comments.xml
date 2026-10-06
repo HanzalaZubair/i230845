@@ -13,8 +13,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
-        >
+        android:gravity="center_vertical">
 
         <ImageButton
             android:layout_width="0dp"
@@ -53,8 +52,7 @@
                 android:drawableEnd="@drawable/down"
                 android:drawablePadding="3dp"
                 android:background="@drawable/oval"
-                android:paddingHorizontal="10dp"
-                />
+                android:paddingHorizontal="10dp" />
 
         </LinearLayout>
 
@@ -63,9 +61,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        >
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -75,6 +72,7 @@
             android:layout_marginLeft="20dp">
 
             <ImageView
+                android:id="@+id/like"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/like"
@@ -82,11 +80,10 @@
                 android:background="@drawable/circle"
                 android:backgroundTint="#0B5F63"
                 android:scaleType="fitCenter"
-                android:padding="5dp"
-                android:foregroundGravity="center_vertical"
-                android:id="@+id/like" />
+                android:padding="5dp" />
 
             <ImageView
+                android:id="@+id/heart"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/heart"
@@ -95,12 +92,11 @@
                 android:backgroundTint="@color/red"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
-                android:foregroundGravity="center_vertical"
-                android:id="@+id/heart"
                 android:layout_toEndOf="@+id/like"
                 android:translationX="-10dp" />
 
             <ImageView
+                android:id="@+id/emoji"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/emoji"
@@ -109,8 +105,6 @@
                 android:backgroundTint="@color/orange"
                 android:scaleType="fitCenter"
                 android:padding="5dp"
-                android:foregroundGravity="center_vertical"
-                android:id="@+id/emoji"
                 android:layout_toEndOf="@+id/heart"
                 android:translationX="-20dp" />
 
@@ -119,7 +113,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="1.2K "
+            android:text="1.2K"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="16sp"
@@ -131,7 +125,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/right"
-            android:gravity="center_vertical"
             android:scaleType="fitCenter"
             android:padding="15dp" />
 
@@ -140,419 +133,580 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7"
+        android:layout_weight="9"
         android:orientation="vertical"
-        android:paddingLeft="25dp"
-        android:paddingRight="15dp">
+        android:padding="10dp">
 
-        <!-- AISHA COMMENT -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="105dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/circle"
                     android:backgroundTint="@color/brown"
                     android:gravity="center"
                     android:text="AK"
                     android:textColor="@color/white"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingTop="5dp">
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/aishaComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#E0E0E0"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aisha Khan"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="That sky is unreal. Which part of beach was it?"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    android:background="@drawable/comment_background">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="22dp"
-                        android:text="Aisha Khan"
-                        android:textSize="13sp"
-                        android:textStyle="bold"
-                        android:textColor="#222222"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:text="That sky is unreal. Which part of the beach was this?"
-                        android:textSize="12sp"
-                        android:textColor="#333333"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="28dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
                     android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
                     android:gravity="center_vertical">
 
                     <TextView
-                        android:layout_width="40dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="2h"
-                        android:textSize="10sp"
-                        android:textColor="#777777"/>
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:layout_marginRight="12dp" />
 
                     <TextView
-                        android:layout_width="45dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Like"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="#555555"/>
+                        android:textColor="@color/gray"
+                        android:layout_marginRight="12dp" />
 
                     <TextView
-                        android:layout_width="55dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Reply"
-                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment"
+                        android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="#555555"/>
+                        android:textColor="@color/gray" />
 
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="100dp">
 
-                    <TextView
-                        android:layout_width="45dp"
-                        android:layout_height="22dp"
-                        android:gravity="center"
-                        android:text="💬 24"
-                        android:textSize="9sp"
-                        android:background="@drawable/oval"/>
+                        <ImageView
+                            android:id="@+id/like"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/like"
+                            android:tint="@color/white"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="#0B5F63"
+                            android:scaleType="fitCenter"
+                            android:padding="5dp" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/heart"
+                            android:tint="@color/white"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="@color/red"
+                            android:scaleType="fitCenter"
+                            android:padding="5dp"
+                            android:layout_toEndOf="@+id/like"
+                            />
+
+
+
+                    </RelativeLayout>
+
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="@color/brown"
+                            android:gravity="center"
+                            android:text="HA"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/replyComment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="#E0E0E0"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hassan Ali"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="It was near the eastern side of the beach."
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1h"
+                                android:textSize="14sp"
+                                android:textColor="@color/gray"
+                                android:layout_marginRight="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Like"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray"
+                                android:layout_marginRight="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comment"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="100dp">
+
+
+                                <ImageView
+                                    android:id="@+id/emoji"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/emoji"
+                                    android:tint="@color/white"
+                                    android:background="@drawable/circle"
+                                    android:backgroundTint="@color/orange"
+                                    android:scaleType="fitCenter"
+                                    android:padding="5dp"
+                                    android:layout_toEndOf="@+id/heart"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center_horizontal"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="@color/brown"
+                            android:gravity="center"
+                            android:text="HA"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/replyComment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="#E0E0E0"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hassan Ali"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="It was near the eastern side of the beach."
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1h"
+                                android:textSize="14sp"
+                                android:textColor="@color/gray"
+                                android:layout_marginRight="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Like"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray"
+                                android:layout_marginRight="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comment"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gray" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
             </LinearLayout>
+
+
 
         </LinearLayout>
 
-        <!-- REPLY SECTION -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="195dp">
-
-            <!-- VERTICAL REPLY LINE -->
-            <View
-                android:layout_width="1dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="15dp"
-                android:background="#D5D5D5"/>
-
-            <!-- LINA -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="85dp"
-                android:orientation="horizontal"
-                android:paddingLeft="40dp">
-
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:gravity="center"
-                        android:text="LM"
-                        android:textSize="10sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:background="@drawable/circle_purple"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="62dp"
-                        android:orientation="vertical"
-                        android:padding="9dp"
-                        android:background="@drawable/comment_background">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:text="Lina Marsh"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            android:textColor="#222222"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="35dp"
-                            android:text="Near the old pier, right before the rain started!"
-                            android:textSize="11sp"
-                            android:textColor="#333333"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="23dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="40dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="1h"
-                            android:textSize="9sp"
-                            android:textColor="#777777"/>
-
-                        <TextView
-                            android:layout_width="45dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="Like"
-                            android:textSize="9sp"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="55dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="Reply"
-                            android:textSize="9sp"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"/>
-
-                        <TextView
-                            android:layout_width="30dp"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="☺ 3"
-                            android:textSize="8sp"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <!-- ZAIN -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:orientation="horizontal"
-                android:paddingLeft="65dp"
-                android:layout_marginTop="82dp">
-
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal">
-
-                    <TextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:gravity="center"
-                        android:text="ZR"
-                        android:textSize="10sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:background="@drawable/circle_blue"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="75dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:padding="9dp"
-                    android:background="@drawable/comment_background">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:text="Zain Raza"
-                        android:textSize="12sp"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:text="@Lina Marsh next time invite the rest of us"
-                        android:textSize="11sp"
-                        android:textColor="#333333"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-        <!-- MORE REPLIES -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:paddingLeft="40dp"
-            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="View 6 more replies"
-            android:textSize="11sp"
-            android:textColor="#666666"/>
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="5dp"
+            />
 
-        <!-- HAMZA -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="145dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/brown"
                     android:gravity="center"
                     android:text="HA"
-                    android:textSize="10sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/circle_brown"/>
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/aishaComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#E0E0E0"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hamza Ali"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Same spot one ear ago"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="95dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/default_gallery"/>
+
                 <LinearLayout
-                    android:layout_width="160dp"
-                    android:layout_height="52dp"
-                    android:orientation="vertical"
-                    android:padding="9dp"
-                    android:background="@drawable/comment_background">
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:text="Hamza Ali"
-                        android:textSize="12sp"
-                        android:textStyle="bold"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1h"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:layout_marginRight="10dp" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="22dp"
-                        android:text="Same spot, one year ago."
-                        android:textSize="11sp"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Like"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray" />
 
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="5dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/default_gallery"/>
+
 
             </LinearLayout>
+
+
 
         </LinearLayout>
 
-        <!-- MAYA -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@android:color/holo_green_dark"
                     android:gravity="center"
                     android:text="MC"
-                    android:textSize="10sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/circle_olive"/>
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="150dp"
-                    android:layout_height="45dp"
-                    android:padding="10dp"
-                    android:background="@drawable/comment_background">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Maya Chen&#10;Framing this one."
-                        android:textSize="11sp"
-                        android:textColor="#333333"/>
+                    <LinearLayout
+                        android:id="@+id/aishaComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#E0E0E0"
+                        android:padding="10dp">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maya Chen"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Farming this one."
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
 
             </LinearLayout>
+
+
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- REPLY BOX -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        >
+        android:layout_weight="1.5"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <TextView
@@ -560,10 +714,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:text="Replying to Aisha Khan"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical"
-                android:textColor="#777777"/>
+                android:textColor="@color/black"/>
 
             <TextView
                 android:layout_width="0dp"
@@ -571,9 +725,9 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Cancel"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="#666666"/>
+                android:textColor="@color/gray"/>
 
         </LinearLayout>
 
@@ -591,7 +745,7 @@
                 android:src="@drawable/camera"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:padding="5dp"
+                android:padding="7dp"
                 android:tint="#0B5F63" />
 
             <LinearLayout
@@ -626,8 +780,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                >
+                android:gravity="center">
 
                 <ImageButton
                     android:layout_width="30dp"
@@ -637,8 +790,8 @@
                     android:scaleType="fitCenter"
                     android:padding="5dp"
                     android:backgroundTint="#0B5F63"
-                    android:tint="@color/white"
-                    />
+                    android:tint="@color/white" />
+
             </LinearLayout>
 
         </LinearLayout>

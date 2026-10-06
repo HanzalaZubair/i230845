@@ -56,8 +56,8 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="@color/white"
-                    android:id="@+id/star"
                     android:layout_alignParentEnd="true"
+                    android:id="@+id/closeButton"
                     />
 
             </RelativeLayout>
@@ -120,7 +120,7 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="@color/white"
-                    android:id="@+id/face"
+                    android:id="@+id/captureButton"
                     android:layout_toStartOf="@+id/face"
                     />
 
