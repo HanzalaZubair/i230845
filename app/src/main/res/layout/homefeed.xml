@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:padding="8dp">
+
+    android:padding="8dp"
+    android:layout_marginBottom="15dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -228,15 +231,20 @@
 
         </RelativeLayout>
 
-        <EditText
+        <TextView
             android:id="@+id/createPost"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:hint="What's on your mind, Jacob?"
+            android:text="What's on your mind, Jacob?"
             android:background="@drawable/border"
             android:textSize="16sp"
-            android:padding="10dp" />
+            android:textColor="@color/gray"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -603,7 +611,6 @@
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/comments"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:text="Aisha and 1.2k likes - 86 comments - 12 shares"
@@ -634,13 +641,14 @@
                 android:paddingHorizontal="20dp" />
 
             <TextView
+                android:id="@+id/comments"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Comment"
                 android:drawableStart="@drawable/comment"
                 android:drawablePadding="10dp"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"

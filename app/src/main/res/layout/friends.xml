@@ -39,6 +39,7 @@
                 android:layout_gravity="center"
                 android:layout_marginRight="10dp"
                 android:scaleType="fitCenter"
+                android:id="@+id/search"
                 android:padding="10dp" />
 
             <ImageButton
@@ -51,6 +52,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center"
                 android:scaleType="fitCenter"
+                android:id="@+id/messenger"
                 android:padding="10dp" />
 
             <TextView
@@ -87,6 +89,7 @@
                 android:src="@drawable/home"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
+                android:id="@+id/home"
                 android:padding="8dp" />
 
         </LinearLayout>

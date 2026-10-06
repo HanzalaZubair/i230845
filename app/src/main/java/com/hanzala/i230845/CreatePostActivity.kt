@@ -9,5 +9,16 @@ class CreatePostActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.createpost)
+
+        val closeButton = findViewById<android.view.View>(R.id.closeButton)
+        val postButton = findViewById<android.view.View>(R.id.postButton)
+
+        closeButton.setOnClickListener {
+            finish()
+        }
+
+        postButton.setOnClickListener {
+            finish()
+        }
     }
 }

@@ -2,7 +2,6 @@ package com.hanzala.i230845
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.activity.ComponentActivity
 
 class CameraActivity : ComponentActivity() {
@@ -12,18 +11,20 @@ class CameraActivity : ComponentActivity() {
 
         setContentView(R.layout.camera)
 
-        val closeButton = findViewById<View>(R.id.closeButton)
-        val captureButton = findViewById<View>(R.id.captureButton)
+        val closeButton = findViewById<android.view.View>(R.id.closeButton)
+        val picture = findViewById<android.view.View>(R.id.picture)
+        val capture = findViewById<android.view.View>(R.id.capture)
 
         closeButton.setOnClickListener {
-            val intent = Intent(this, HomeFeedActivity::class.java)
-            startActivity(intent)
             finish()
         }
 
-        captureButton.setOnClickListener {
-            val intent = Intent(this, StoryEditorActivity::class.java)
-            startActivity(intent)
+        picture.setOnClickListener {
+            startActivity(Intent(this, PhotoPickerActivity::class.java))
+        }
+
+        capture.setOnClickListener {
+            startActivity(Intent(this, StoryEditorActivity::class.java))
         }
     }
 }

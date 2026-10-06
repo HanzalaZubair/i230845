@@ -22,6 +22,7 @@
             android:src="@drawable/left_arrow"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
+            android:id="@+id/backButton"
             android:padding="7dp" />
 
         <TextView

@@ -22,7 +22,9 @@
             android:src="@drawable/left_arrow"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:padding="7dp" />
+            android:padding="7dp"
+            android:id="@+id/backtohome"
+            />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -169,11 +171,14 @@
             />
 
         <LinearLayout
+            android:id="@+id/omarFarooq"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.7"
             android:layout_marginBottom="5dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
 
             <TextView
                 android:id="@+id/name"

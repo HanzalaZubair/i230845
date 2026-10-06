@@ -23,6 +23,7 @@
             android:layout_weight="1"
             android:src="@drawable/left_arrow"
             android:background="@android:color/transparent"
+            android:id="@+id/backToHome"
             android:scaleType="fitCenter"
             android:padding="7dp" />
 
@@ -281,6 +282,7 @@
         android:layout_weight="12">
 
         <LinearLayout
+            android:id="@+id/aishaChat"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:orientation="horizontal">
@@ -332,15 +334,15 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/aishaChat"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Omar Siddiqui"
+                    android:text="Aisha Khan"
                     android:textStyle="bold"
                     android:gravity="bottom"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
-                    />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"

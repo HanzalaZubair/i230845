@@ -9,5 +9,11 @@ class CommentsActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.comments)
+
+        val backButton = findViewById<android.view.View>(R.id.backButton)
+
+        backButton.setOnClickListener {
+            finish()
+        }
     }
 }

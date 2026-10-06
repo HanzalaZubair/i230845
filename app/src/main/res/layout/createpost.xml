@@ -22,15 +22,16 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
 
-            <ImageButton
+            <ImageView
+                android:id="@+id/closeButton"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:scaleType="centerCrop"
-                android:padding="18dp"
-
                 android:src="@drawable/close"
+                android:scaleType="centerCrop"
+                android:contentDescription="Close"
+                android:padding="10dp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -40,7 +41,7 @@
                 android:text="Create post"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#222222"/>
+                android:textColor="#222222" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -49,6 +50,7 @@
                 android:gravity="center">
 
                 <TextView
+                    android:id="@+id/postButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -59,7 +61,9 @@
                     android:textStyle="bold"
                     android:textColor="@color/white"
                     android:backgroundTint="#0B5F63"
-                    android:background="@drawable/oval"/>
+                    android:background="@drawable/oval"
+                    android:clickable="true"
+                    android:focusable="true" />
 
             </LinearLayout>
 
@@ -67,7 +71,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            android:layout_height="1dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,7 +94,6 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <!-- USER DETAILS -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -107,7 +110,7 @@
                     android:text="Jacob West"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -134,8 +137,7 @@
                             android:textSize="12sp"
                             android:drawableTint="#0b5f63"
                             android:textColor="#0B5F63"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
 
                     </LinearLayout>
 
@@ -144,6 +146,7 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:layout_weight="1">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -157,8 +160,7 @@
                             android:textSize="12sp"
                             android:drawableTint="#0b5f63"
                             android:textColor="#0B5F63"
-                            android:padding="5dp"
-                            />
+                            android:padding="5dp" />
 
                     </LinearLayout>
 
@@ -168,9 +170,6 @@
                         android:layout_weight="1">
 
                     </LinearLayout>
-
-
-
 
                 </LinearLayout>
 
@@ -190,17 +189,14 @@
             android:textColor="#222222"
             android:background="@android:color/transparent"
             android:padding="0dp"
-            android:inputType="textMultiLine"/>
+            android:inputType="textMultiLine" />
 
-        <!-- COLORS -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
             android:orientation="horizontal"
-
-            android:paddingHorizontal="10dp"
-            >
+            android:paddingHorizontal="10dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -211,65 +207,62 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:background="@drawable/border_rectangle"
-                />
+                android:background="@drawable/border_rectangle" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:background="#0b5f63"/>
+                android:background="#0b5f63" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:background="@color/brown"/>
+                android:background="@color/brown" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:background="@color/blue"/>
+                android:background="@color/blue" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:background="@color/green"/>
+                android:background="@color/green" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:background="@color/orange"/>
+                android:background="@color/orange" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:background="@color/purple"/>
+                android:background="@color/purple" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
-                android:background="@color/black"/>
+                android:background="@color/black" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="2"
-                android:layout_marginLeft="5dp"
-                />
-
+                android:layout_marginLeft="5dp" />
 
         </LinearLayout>
 
@@ -279,8 +272,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -291,8 +283,7 @@
             <View
                 android:layout_width="100dp"
                 android:layout_height="4dp"
-                android:background="@color/gray"
-                />
+                android:background="@color/gray" />
 
         </LinearLayout>
 
@@ -309,8 +300,7 @@
                 android:src="@drawable/photo"
                 android:layout_marginRight="20dp"
                 android:tint="#0b5f63"
-                android:scaleType="centerCrop"
-                />
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="0dp"
@@ -319,7 +309,7 @@
                 android:gravity="center_vertical"
                 android:text="Photo / video"
                 android:textSize="14sp"
-                android:textColor="#333333"/>
+                android:textColor="#333333" />
 
         </LinearLayout>
 
@@ -336,8 +326,7 @@
                 android:src="@drawable/tag"
                 android:layout_marginRight="20dp"
                 android:tint="#0b5f63"
-                android:scaleType="centerCrop"
-                />
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="0dp"
@@ -346,7 +335,7 @@
                 android:gravity="center_vertical"
                 android:text="Tag people"
                 android:textSize="14sp"
-                android:textColor="#333333"/>
+                android:textColor="#333333" />
 
         </LinearLayout>
 
@@ -363,8 +352,7 @@
                 android:src="@drawable/emoji"
                 android:layout_marginRight="20dp"
                 android:tint="@color/orange"
-                android:scaleType="centerCrop"
-                />
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="0dp"
@@ -373,7 +361,7 @@
                 android:gravity="center_vertical"
                 android:text="Feeling/activity"
                 android:textSize="14sp"
-                android:textColor="#333333"/>
+                android:textColor="#333333" />
 
         </LinearLayout>
 
@@ -390,8 +378,7 @@
                 android:src="@drawable/location"
                 android:layout_marginRight="20dp"
                 android:tint="@color/brown"
-                android:scaleType="centerCrop"
-                />
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="0dp"
@@ -400,7 +387,7 @@
                 android:gravity="center_vertical"
                 android:text="Check in"
                 android:textSize="14sp"
-                android:textColor="#333333"/>
+                android:textColor="#333333" />
 
         </LinearLayout>
 
@@ -417,8 +404,7 @@
                 android:src="@drawable/recorder"
                 android:layout_marginRight="20dp"
                 android:tint="@color/brown"
-                android:scaleType="centerCrop"
-                />
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="0dp"
@@ -427,7 +413,7 @@
                 android:gravity="center_vertical"
                 android:text="Live video"
                 android:textSize="14sp"
-                android:textColor="#333333"/>
+                android:textColor="#333333" />
 
         </LinearLayout>
 
@@ -444,8 +430,7 @@
                 android:src="@drawable/camera"
                 android:layout_marginRight="20dp"
                 android:tint="#0b5f63"
-                android:scaleType="centerCrop"
-                />
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="0dp"
@@ -454,7 +439,7 @@
                 android:gravity="center_vertical"
                 android:text="Camera"
                 android:textSize="14sp"
-                android:textColor="#333333"/>
+                android:textColor="#333333" />
 
         </LinearLayout>
 
@@ -471,8 +456,7 @@
                 android:src="@drawable/calender"
                 android:layout_marginRight="20dp"
                 android:tint="@color/purple"
-                android:scaleType="centerCrop"
-                />
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="0dp"
@@ -481,7 +465,7 @@
                 android:gravity="center_vertical"
                 android:text="Create event"
                 android:textSize="14sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
         </LinearLayout>
 

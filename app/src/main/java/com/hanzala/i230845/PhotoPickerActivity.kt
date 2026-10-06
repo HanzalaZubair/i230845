@@ -9,5 +9,11 @@ class PhotoPickerActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.photopicker)
+
+        val cancelButton = findViewById<android.view.View>(R.id.cancelButton)
+
+        cancelButton.setOnClickListener {
+            finish()
+        }
     }
 }

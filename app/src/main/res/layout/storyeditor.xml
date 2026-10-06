@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:background="@color/black"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,22 +17,21 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="9"
-            >
+            android:layout_weight="9">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/default_gallery"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:gravity="center_vertical"
-                >
+                android:gravity="center_vertical">
 
                 <ImageButton
+                    android:id="@+id/closeButton"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="5dp"
@@ -42,9 +40,7 @@
                     android:backgroundTint="#80808080"
                     android:scaleType="fitCenter"
                     android:padding="13dp"
-                    android:tint="@color/white"
-                    android:id="@+id/close"
-                    />
+                    android:tint="@color/white" />
 
                 <ImageButton
                     android:layout_width="50dp"
@@ -56,11 +52,11 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="@color/white"
-                    android:id="@+id/emoji"
-                    android:layout_toStartOf="@+id/type"
-                    />
+                    android:id="@+id/addContact"
+                    android:layout_toStartOf="@id/type" />
 
                 <TextView
+                    android:id="@+id/type"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="5dp"
@@ -71,11 +67,10 @@
                     android:textStyle="bold"
                     android:background="@drawable/circle"
                     android:backgroundTint="#80808080"
-                    android:id="@+id/type"
-                    android:layout_toStartOf="@+id/emoji"
-                    />
+                    android:layout_toStartOf="@id/emoji" />
 
                 <ImageButton
+                    android:id="@+id/emoji"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="5dp"
@@ -85,11 +80,10 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="@color/white"
-                    android:id="@+id/emoji"
-                    android:layout_toStartOf="@+id/music"
-                    />
+                    android:layout_toStartOf="@id/music" />
 
                 <ImageButton
+                    android:id="@+id/music"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="5dp"
@@ -99,11 +93,10 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="@color/white"
-                    android:id="@+id/music"
-                    android:layout_toStartOf="@+id/star"
-                    />
+                    android:layout_toStartOf="@id/star" />
 
                 <ImageButton
+                    android:id="@+id/star"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="5dp"
@@ -113,12 +106,7 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="@color/white"
-                    android:id="@+id/star"
-                    android:layout_alignParentEnd="true"
-                    />
-
-
-
+                    android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
 
@@ -132,7 +120,7 @@
                 android:background="@color/brown"
                 android:padding="10dp"
                 android:layout_marginTop="350dp"
-                android:layout_marginLeft="50dp"/>
+                android:layout_marginLeft="50dp" />
 
         </RelativeLayout>
 
@@ -141,9 +129,10 @@
             android:layout_height="0dp"
             android:layout_weight="1.5"
             android:orientation="horizontal"
-            android:background="@color/black" >
+            android:background="@color/black">
 
             <LinearLayout
+                android:id="@+id/yourStory"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:orientation="horizontal"
@@ -153,7 +142,9 @@
                 android:background="@drawable/oval"
                 android:backgroundTint="#2f2f2f"
                 android:gravity="center"
-                >
+                android:clickable="true"
+                android:focusable="true">
+
                 <TextView
                     android:id="@+id/jw"
                     android:layout_width="35dp"
@@ -169,7 +160,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#0B5F63"
                     android:gravity="center"
                     android:text="Your story"
                     android:textColor="@color/white"
@@ -188,8 +178,8 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:background="@drawable/oval"
-                android:backgroundTint="#2f2f2f"
-                >
+                android:backgroundTint="#2f2f2f">
+
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -197,13 +187,11 @@
                     android:background="@drawable/circle"
                     android:backgroundTint="@color/green"
                     android:tint="@color/white"
-                    android:padding="5dp"
-                    />
+                    android:padding="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#0B5F63"
                     android:gravity="center"
                     android:text="Close friends"
                     android:textColor="@color/white"
@@ -214,14 +202,16 @@
 
             </LinearLayout>
 
-
             <LinearLayout
+                android:id="@+id/nextButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_weight="1"
-                >
+                android:clickable="true"
+                android:focusable="true">
+
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -230,12 +220,11 @@
                     android:rotation="-90"
                     android:background="@drawable/circle"
                     android:backgroundTint="#0B5F63"
-                    android:tint="@color/white"
-                    />
+                    android:tint="@color/white" />
+
             </LinearLayout>
 
         </LinearLayout>
-
 
     </LinearLayout>
 

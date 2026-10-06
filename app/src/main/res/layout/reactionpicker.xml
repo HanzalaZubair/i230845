@@ -14,13 +14,15 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/backButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/left_arrow"
             android:background="@android:color/transparent"
+
             android:scaleType="fitCenter"
-            android:padding="7dp" />
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="0dp"
